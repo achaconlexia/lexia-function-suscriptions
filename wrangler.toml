@@ -16,5 +16,5 @@ enabled = false
 
 [[hyperdrive]]
 binding = "HYPERDRIVE"
-id = "92c471467ade4469ae932f9989ba57f0"
+id = "cd60532fec124dbebddcf623a8adc5b9"
 localConnectionString = "postgresql://postgres:postgres@localhost:5432/lexia-saas"
