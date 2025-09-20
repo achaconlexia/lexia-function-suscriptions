@@ -1,0 +1,20 @@
+name = "lexia-function-payments"
+main = "./src/index.ts"
+compatibility_date = "2024-12-25"
+compatibility_flags = ["nodejs_compat"]
+
+account_id = "d821d06a70476db11364cd3d1ebb7d24"
+
+[vars]
+GATEWAY_SECRET = "BoAV0sZOcg6uyAX1LglyQY3wo9mIOVEI0mTs9w5r2PClZmFoGi"
+
+AWS_REGION = "us-east-1"
+S3_BUCKET_NAME = "vault-lexia-dev"
+
+[observability]
+enabled = false
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "92c471467ade4469ae932f9989ba57f0"
+localConnectionString = "postgresql://postgres:postgres@localhost:5432/lexia-saas"

@@ -1,0 +1,30 @@
+{
+  "name": "lexia-function-payments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "worker:dev:local": "wrangler dev --local",
+    "worker:dev:remote": "wrangler dev --remote",
+    "worker:deploy": "wrangler deploy",
+    "worker:tail": "wrangler tail",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.887.0",
+    "dotenv": "^17.2.2",
+    "drizzle-orm": "^0.44.5",
+    "hono": "^4.9.5",
+    "pg": "^8.16.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.5",
+    "drizzle-kit": "^0.31.4",
+    "wrangler": "^4.34.0"
+  }
+}
