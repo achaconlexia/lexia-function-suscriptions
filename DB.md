@@ -22,6 +22,10 @@ schema: "drizzle",
 },
 });
 
+## 1. Genera las migraciones primero
+
+npm run db:generate
+
 ## 2. Ejecuta la migración
 
 npm run db:migrate

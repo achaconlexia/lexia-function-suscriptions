@@ -7,6 +7,7 @@ account_id = "d821d06a70476db11364cd3d1ebb7d24"
 
 [vars]
 GATEWAY_SECRET = "BoAV0sZOcg6uyAX1LglyQY3wo9mIOVEI0mTs9w5r2PClZmFoGi"
+OPENMETER_TOKEN = "om_hy8XwZ7gZQOAXM9DbUIRZhxdUFjKaF01.IX2r-UvhELv3MqTn6bCKEc7n64I0qkBCAzT36NaF4wk"
 
 AWS_REGION = "us-east-1"
 S3_BUCKET_NAME = "vault-lexia-dev"

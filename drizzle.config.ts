@@ -1,3 +1,4 @@
+// drizzle.config.ts
 // CREATE DATABASE "lexia-saas";
 // CREATE USER lexia_user WITH PASSWORD 'lexia_password';
 // GRANT ALL PRIVILEGES ON DATABASE "lexia-saas" TO lexia_user;

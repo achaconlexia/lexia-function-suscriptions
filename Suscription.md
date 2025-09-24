@@ -1,3 +1,5 @@
+# link repo: https://github.com/achaconlexia/lexia-function-suscriptions
+
 # token_openMeter="om_hy8XwZ7gZQOAXM9DbUIRZhxdUFjKaF01.IX2r-UvhELv3MqTn6bCKEc7n64I0qkBCAzT36NaF4wk"
 
 # Suscription

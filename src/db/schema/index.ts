@@ -1,1 +1,2 @@
-export * from "./payments";
+//src/db/schema/index.ts
+export * from "./subscriptions";

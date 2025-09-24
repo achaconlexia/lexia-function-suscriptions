@@ -1,5 +1,17 @@
 # Link suscripción: https://lexia-function-suscriptions-v1.tolaw-dev-workspace.workers.dev
 
+# para el caso test-gateway@example.com
+
+```bash
+curl -X POST "https://api.devlexia.cc/v1/auth/sign-in/email" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "test-gateway@example.com",
+    "password": "superseguro123"
+  }' \
+  -i
+```
+
 # Payments
 
 ## Crear payments

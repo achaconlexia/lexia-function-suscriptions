@@ -1,9 +1,12 @@
+//src/config/bindings.ts
 export type Env = {
-  HYPERDRIVE?: {
-    connectionString: string;
-  };
-  AWS_ACCESS_KEY_ID?: string;
-  AWS_SECRET_ACCESS_KEY?: string;
-  AWS_REGION?: string;
-  S3_BUCKET_NAME?: string;
+	HYPERDRIVE?: {
+		connectionString: string;
+	};
+	GATEWAY_SECRET?: string;
+	OPENMETER_TOKEN?: string; // Agregamos esto
+	AWS_ACCESS_KEY_ID?: string;
+	AWS_SECRET_ACCESS_KEY?: string;
+	AWS_REGION?: string;
+	S3_BUCKET_NAME?: string;
 };
