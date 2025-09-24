@@ -1,4 +1,4 @@
-name = "lexia-function-payments"
+name = "lexia-function-suscriptions-v1"
 main = "./src/index.ts"
 compatibility_date = "2024-12-25"
 compatibility_flags = ["nodejs_compat"]
@@ -16,5 +16,5 @@ enabled = false
 
 [[hyperdrive]]
 binding = "HYPERDRIVE"
-id = "92c471467ade4469ae932f9989ba57f0"
-localConnectionString = "postgresql://postgres:postgres@localhost:5432/lexia-saas"
+id = "cd60532fec124dbebddcf623a8adc5b9"
+localConnectionString = "postgresql://lexia_user:lexia_password@localhost:5432/lexia-saas"

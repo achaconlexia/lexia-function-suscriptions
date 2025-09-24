@@ -341,3 +341,5 @@ curl https://openmeter.cloud/api/v1/subscriptions/01K5XH18C82X6QQH5E0SRW8BTV \
 - Paso lógica:
   De las tablas , creo una fucnión para validar si está suscrito donde le paso el "suscription_id" con el respectivo "user_id" donde ve si está "activo" así que la respuesta es "Suscrito" o "null"
 - Enviar una sucription como no activo y listar
+
+# npx wrangler hyperdrive get cd60532fec124dbebddcf623a8adc5b9

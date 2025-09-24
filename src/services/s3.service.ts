@@ -6,8 +6,7 @@ export class S3Service {
   private client: S3Client;
   private bucketName: string;
 
-  constructor(env: Env) {
-    // Para desarrollo local, usar process.env; para producción, usar env
+  constructor(env: Env) {    
     const accessKeyId = env.AWS_ACCESS_KEY_ID || process.env.AWS_ACCESS_KEY_ID;
     const secretAccessKey = env.AWS_SECRET_ACCESS_KEY || process.env.AWS_SECRET_ACCESS_KEY;
     const region = env.AWS_REGION || process.env.AWS_REGION || "us-east-1";

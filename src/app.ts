@@ -3,7 +3,7 @@ import { Hono } from "hono";
 import { logger } from "hono/logger";
 import { prettyJSON } from "hono/pretty-json";
 import { Env } from "./config/bindings";
-import { fileRoutes } from "./modules/files/file.routes";
+import { paymentRoutes } from "./modules/payments/payments.routes";
 import { cors } from "hono/cors";
 import { gatewayAuthMiddleware } from "./middleware/auth.middleware";
 
@@ -26,7 +26,7 @@ app.use("*", cors({
 
 
 // Rutas
-app.route("/files", fileRoutes);
+app.route("/payments", paymentRoutes);
 
 // Healthcheck
 app.get("/health", (c) => c.json({ ok: true }));
