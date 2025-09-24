@@ -20,7 +20,7 @@ curl http://localhost:8787/payments \
     "method": "Tarjeta",
     "type": "manual",
     "status": "Pendiente",
-    "organizationName": "Mi Organización",
+    "organizationName": "MiOrganización",
     "attemptDate": "2025-04-05T10:00:00Z"
   }'
 ```
@@ -33,7 +33,7 @@ curl http://localhost:8787/payments \
 	"data": [
 		{
 			"id": "fb73b7ba-3eaf-457f-83eb-6ae683c0ad32",
-			"organizationName": "Mi Organización",
+			"organizationName": "MiOrganización",
 			"workspaceId": "workspace-id",
 			"invoiceId": null,
 			"gatewayId": "gateway-id",
