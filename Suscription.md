@@ -6,9 +6,7 @@
 
 ## Crear la suscripción (Organización, plan y pago. )
 
-## Plan ed pago por organizaciones
-
-- Paso 1 creas el subject y extraes el "key" del subject
+- Paso 1 creas el subject sí o sí y extraes el "key" del subject
 
 ```bash
 curl -X POST https://openmeter.cloud/api/v1/subjects \
@@ -45,7 +43,7 @@ curl -X POST https://openmeter.cloud/api/v1/subjects \
 ]
 ```
 
-- Paso 2 en Custores se asigna de manera automática el subject con su propio key y extraes el ID del customer
+- Paso 2 , ya creado el subject, se crea automáticamente un Custores  que se asigna de manera automática el subject con su propio key y extraes el ID del customer que es el id del subject
 
 ```bash
 curl -X GET "https://openmeter.cloud/api/v1/customers/user_7" \
@@ -76,7 +74,7 @@ curl -X GET "https://openmeter.cloud/api/v1/customers/user_7" \
 }
 ```
 
-- Paso 3: con ese id que es "01K5XF06NS71R176CKFG5GZF3W", añades el plan de suscripción:
+- Paso 3: con ese id que es "01K5XF06NS71R176CKFG5GZF3W" (debe ser almacenado en la base de datos como subscriptionId: text("subscription_id"), // Puede ser NULL ), añades el plan de suscripción:
 
 ```bash
 curl -X POST https://openmeter.cloud/api/v1/subscriptions \

@@ -1,4 +1,4 @@
-name = "lexia-function-suscriptions-v1"
+name = "lexia-function-suscriptions-v2"
 main = "./src/index.ts"
 compatibility_date = "2024-12-25"
 compatibility_flags = ["nodejs_compat"]

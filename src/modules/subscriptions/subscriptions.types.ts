@@ -2,9 +2,14 @@
 import { Env } from "@/config/bindings";
 
 /** Datos para crear una suscripción */
+// src/modules/subscriptions/subscriptions.types.ts
+
+/** Datos para crear una suscripción */
 export interface CreateSubscriptionParams {
-	subscriptionId: string;
-	customerId: string;
+	// Campos que se generan internamente (OpenMeter)
+	subscriptionId?: string; // ← Hacer opcional
+	customerId?: string; // ← Hacer opcional
+
 	subjectKey: string;
 	userId: string;
 	workspaceId: string;

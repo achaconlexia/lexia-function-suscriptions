@@ -5,18 +5,18 @@ import { SubscriptionService } from "./subscriptions.service";
 
 export const SubscriptionController = {
 	// Crear una nueva suscripción
+	// src/modules/subscriptions/subscriptions.controller.ts
+
+	// Crear una nueva suscripción
 	create: async (c: Context) => {
 		try {
 			const body = await c.req.json<{
-				subscriptionId: string;
-				customerId: string;
 				subjectKey: string;
-				userId: string;
-				workspaceId: string;
+				// userId?: string;          // ← Quitar de body
+				// workspaceId?: string;     // ← Quitar de body
 				organizationName?: string;
 				planKey: string;
-				status?: string;
-				startDate: string;
+				// startDate?: string;       // ← Quitar de body
 				endDate?: string;
 				currency?: string;
 				paymentId?: string;
@@ -26,20 +26,27 @@ export const SubscriptionController = {
 			console.log("📩 Subscription body recibido:", body);
 
 			if (
-				!body.subscriptionId ||
-				!body.customerId ||
+				// !body.subscriptionId ||  // ← Quitar de validación
+				// !body.customerId ||      // ← Quitar de validación
 				!body.subjectKey ||
-				!body.userId ||
-				!body.workspaceId ||
-				!body.planKey ||
-				!body.startDate
+				// !body.userId ||          // ← Quitar de validación
+				// !body.workspaceId ||     // ← Quitar de validación
+				!body.planKey
+				// !body.startDate          // ← Quitar de validación
 			) {
 				return c.json({ error: "Missing required fields" }, 400);
 			}
 
+			// Generar valores internos
+			const userId = body.subjectKey; // ← Usar subjectKey como userId
+			const workspaceId = body.organizationName || body.subjectKey; // ← Igualar a organizationName o usar subjectKey
+			const startDate = new Date(); // ← Usar fecha actual
+
 			const subscription = await SubscriptionService.createSubscription(c.env, {
 				...body,
-				startDate: new Date(body.startDate),
+				userId, // ← Generado internamente
+				workspaceId, // ← Generado internamente
+				startDate, // ← Generado internamente
 				endDate: body.endDate ? new Date(body.endDate) : undefined,
 			});
 
